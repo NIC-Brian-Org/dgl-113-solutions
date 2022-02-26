@@ -31,7 +31,7 @@ function showItems(e) {
 
     // Write your code to complete this function here
 
-    let itemCount = document.getElementById( 'itemcount')
+    let itemCount = document.getElementById( 'itemcount');
     let itemList = document.getElementById('itemlist');
     itemList.innerHTML = "";
 
@@ -41,7 +41,7 @@ function showItems(e) {
         if ( count == 1 ) {
             itemCount.innerHTML = 'Here is the first item:';
         } else {
-            itemCount.innerHTML = `Here are the first ${count} items:`;;
+            itemCount.innerHTML = `Here are the first ${count} items:`;
         }
         for ( let i=0; i<count; i++ ) {
             itemList.innerHTML += `<li>${items[i]}</li>`;
